@@ -1,5 +1,10 @@
 Object.prototype.clone = function(originalObject) {
-    Object.assign(this, originalObject);
+    //Object.assign(this, originalObject); Doesn't work in PhantomJS at the moment
+    for (var prop in originalObject) {
+       if (originalObject.hasOwnProperty(prop)) {
+         this[prop] = originalObject[prop];
+       }
+     }
 }
 
 describe('clone object', function () {
