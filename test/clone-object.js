@@ -1,9 +1,5 @@
 Object.prototype.clone = function(originalObject) {
-    for (var prop in originalObject) {
-      if (originalObject.hasOwnProperty(prop)) {
-        this[prop] = originalObject[prop];
-      }
-    }
+    Object.assign(this, originalObject);
 }
 
 describe('clone object', function () {
