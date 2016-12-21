@@ -4,7 +4,6 @@ describe('scoping', function () {
         request;
 
     request = function (callback) {
-      callback = callback.bind(mod); // Passing mod-context to callback function
       return callback();
     };
 
@@ -17,7 +16,7 @@ describe('scoping', function () {
     };
 
     Module.prototype.req = function() {
-      return request(this.method);
+      return request(this.method.bind(this));
     };
 
     expect(mod.req()).toBe('bar');
