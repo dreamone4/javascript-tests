@@ -1,4 +1,4 @@
-# JavaScript Tests [![Build Status](https://travis-ci.org/ahmednuaman/javascript-tests.svg?branch=master)](https://travis-ci.org/ahmednuaman/javascript-tests)
+# JavaScript Tests [![Build Status](https://travis-ci.org/dreamone4/javascript-tests.svg?branch=master)](https://travis-ci.org/dreamone4/javascript-tests)
 
 A suite of JavaScript tests (hopefully) useful for interviews
 
